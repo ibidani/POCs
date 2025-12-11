@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Browser Navigation</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Demo content for scrolling -->
+  <main id="content">
+    <header class="hero">
+      <h1>Camera Browser Navigation</h1>
+      <p>Control page scrolling with hand gestures</p>
+      <div class="instructions">
+        <h3>How to use:</h3>
+        <ol>
+          <li>Click "Enable Camera" to start</li>
+          <li>Make a <strong>pinch gesture</strong> (thumb + index finger together)</li>
+          <li>Move your hand <strong>up/down</strong> while pinching to scroll</li>
+          <li>Release pinch to stop scrolling</li>
+        </ol>
+        <p class="shortcut">Toggle: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd></p>
+      </div>
+    </header>
+
+    <!-- Demo sections for scrolling -->
+    <section class="demo-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+      <h2>Section 1</h2>
+      <p>Scroll down to see more content. Use pinch gestures to navigate!</p>
+    </section>
+
+    <section class="demo-section" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+      <h2>Section 2</h2>
+      <p>The camera preview shows your hand landmarks in real-time.</p>
+    </section>
+
+    <section class="demo-section" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+      <h2>Section 3</h2>
+      <p>All processing happens locally in your browser - no data is sent anywhere.</p>
+    </section>
+
+    <section class="demo-section" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+      <h2>Section 4</h2>
+      <p>Powered by MediaPipe Hands for fast, accurate hand tracking.</p>
+    </section>
+
+    <section class="demo-section" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+      <h2>Section 5</h2>
+      <p>Works best in good lighting conditions.</p>
+    </section>
+
+    <section class="demo-section" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+      <h2>Section 6</h2>
+      <p>You've reached the end! Scroll back up using pinch gestures.</p>
+    </section>
+  </main>
+
+  <!-- MediaPipe Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+  <!-- App Scripts -->
+  <script src="js/state.js"></script>
+  <script src="js/camera.js"></script>
+  <script src="js/detector.js"></script>
+  <script src="js/gestures.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/overlay.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
