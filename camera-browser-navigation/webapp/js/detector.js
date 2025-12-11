@@ -86,8 +86,7 @@ const HandDetector = {
   },
 
   /**
-   * Get landmark by index
-   * MediaPipe hand landmarks:
+   * Landmark indices for MediaPipe hand model:
    * 0: Wrist
    * 1-4: Thumb (CMC, MCP, IP, TIP)
    * 5-8: Index finger (MCP, PIP, DIP, TIP)
@@ -95,7 +94,7 @@ const HandDetector = {
    * 13-16: Ring finger
    * 17-20: Pinky
    */
-  static LANDMARKS: {
+  LANDMARKS: {
     WRIST: 0,
     THUMB_TIP: 4,
     INDEX_TIP: 8,
@@ -103,14 +102,4 @@ const HandDetector = {
     RING_TIP: 16,
     PINKY_TIP: 20
   }
-};
-
-// Define landmarks as static property
-HandDetector.LANDMARKS = {
-  WRIST: 0,
-  THUMB_TIP: 4,
-  INDEX_TIP: 8,
-  MIDDLE_TIP: 12,
-  RING_TIP: 16,
-  PINKY_TIP: 20
 };
